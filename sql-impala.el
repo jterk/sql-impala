@@ -1,4 +1,4 @@
-;; sql-impala.el --- comint support for Cloudera Impala -*- lexical-binding: t -*-
+;;; sql-impala.el --- comint support for Cloudera Impala -*- lexical-binding: t -*-
 
 ;; Copyright 2015-2016 Jason Terk <jason@goterkyourself.com>
 
@@ -8,7 +8,7 @@
 ;; URL: https://github.com/jterk/sql-impala
 
 ;; This file is not part of GNU Emacs.
-;;
+
 ;; This programis free software: you can redistribute it and/or modify it under
 ;; the terms of the GNU General Public License as published by the Free Software
 ;; Foundation, either version 3 of the License, or (at your option) any later
@@ -23,7 +23,7 @@
 ;; this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
+
 ;; This package adds comint support for the 'impala-shell' interface to Cloudera
 ;; Impala.  Depends on an installed and functional 'impala-shell'.  Installation
 ;; of 'impala-shell' is out of scope of this package.
