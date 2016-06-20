@@ -29,6 +29,8 @@ And install:
 
     M-x package-install RET sql-impala RET
 
+[![MELPA](http://melpa.org/packages/sql-impala-badge.svg)](http://melpa.org/#/sql-impala)
+
 Usage
 -----
 
