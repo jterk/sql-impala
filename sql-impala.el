@@ -69,6 +69,7 @@ The buffer with name BUFFER will be used or created."
 
 (sql-add-product 'impala "Cloudera Impala"
                  :prompt-regexp "^[^>]*> "
+                 :prompt-cont-regexp "^ *> "
                  :sqli-comint-func 'sql-comint-impala
                  :sqli-login sql-impala-login-params
                  :sqli-program 'sql-impala-program
