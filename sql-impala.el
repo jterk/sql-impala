@@ -46,11 +46,11 @@
   :type '(repeat string)
   :group 'SQL)
 
-(defun sql-comint-impala (product options)
-  "Connect to Cloudera Impala in a comint buffer.
+(defun sql-comint-impala (product options &optional buffer)
+  "Connect to Cloudera Impala in a comint BUFFER.
 
 PRODUCT is the sql product (impala).  OPTIONS are any additional
-options to pass to impala-sehll."
+options to pass to impala-shell."
   (let ((params
          (append
           (if (not (string= "" sql-server))
@@ -58,7 +58,7 @@ options to pass to impala-sehll."
           (if (not (string= "" sql-database))
               (list "-d" sql-database))
           options)))
-    (sql-comint product params)))
+    (sql-comint product params buffer)))
 
 (defun sql-impala (&optional buffer)
   "Run Cloudera Impala as an inferior process.
